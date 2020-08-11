@@ -1,0 +1,44 @@
+Create a personel website with the following properties.
+1. Should have at least three pages linked to each other
+2. Should be having one page with your bio-data.
+3. Should include one page with a gallary iof minimun of 
+    3 images (possibilly different sizes.)
+4. Make sure you have some titles to each 
+    page and colors assigned.
+5. add a login page
+6. add a registration page
+7. add a video/audio clip 
+8. Research difference between html and html5
+
+
+<table>
+<tr>
+<th>
+<td>
+<div> container with muitiple lines of code
+<span> a single line container
+<class>
+<id>
+<form>
+    <input>
+    <label>
+    <select>
+    <textarea>
+    <button>
+    <fieldset>
+    <legend>
+    <datalist>
+    <output>
+    <option>
+    <optgroup>
+</form>
+
+css (cascaded style sheet)
+<style>
+{
+    key:value
+}
+3type css
+    inline
+    internal
+    external
