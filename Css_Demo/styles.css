@@ -1,0 +1,47 @@
+h4 {
+    color: orange;
+    text-align: center;
+  }
+h1 {
+    color: brown;
+  }
+body 
+    {
+      background-color: lightblue;
+      background-image: url("images/image2.jpeg");
+      background-repeat: no-repeat;
+      background-size: 100%, 100%;
+      text-align: center;
+  }
+h1 {
+    text-align: center;
+  }
+p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+th,tr {
+    color: brown;
+}
+
+form {
+    display: inline-block;
+}
+label
+{
+    color: coral;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+
+
+
