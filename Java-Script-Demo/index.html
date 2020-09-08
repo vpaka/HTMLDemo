@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>My First Java script</title>
+    </head>
+<body>
+    <form>
+        <p><label >input 1:</label>
+        <input type="text" id="input1" name="input1"></p>
+        <p><label >input 2:</label>
+        <input type="text" id="input2" name="input2"><br>
+        </p>
+
+        <p><label id="label1">Output :</label>
+            <input type="text" id="output" name="output"><br>
+        </p>
+
+        <p><label id="label2"></label>
+            <input type="text" id="output2" name="output"><br>
+        </p>
+        <button type="button" class="button" id="add" name="add" onclick="addfunction()">Add</button>
+        <button type="button" class="button" id="subtract" name="subtract" onclick="subfunction()">Subtract</button>
+        <button type="button" class="button" id="Product" name="Product">Product</button>
+        <button type="button" class="button" id="Division" name="Division">Division</button>
+        <button type="submit" class="button" id="Clear" name="Clear">Clear</button>
+    </form>
+    <script>
+        function addfunction()
+        {
+            document.getElementById("label1").innerText = "Add result: " ;
+            //document.getElementById("output").value = "Hello You clicked add button" ;
+            // var add = document.getElementById("input1").value + document.getElementById("input2").value ;
+            //concatenation 
+            var a = 20;
+            document.getElementById("label2").innerText = typeof parseInt(document.getElementById("input1").value) ;
+            if (typeof document.getElementById("input1").value == "string" )
+            {
+                var concatResult = document.getElementById("input1").value + document.getElementById("input2").value ;
+                document.getElementById("output2").value = concatResult ;
+                var sum = parseInt(document.getElementById("input1").value) + parseInt(document.getElementById("input2").value) ;
+                document.getElementById("output").value = sum ;
+            }
+        }
+        function subfunction()
+        {   
+            document.getElementById("label1").innerText = "Subtraction result: " ;
+            var sum = parseInt(document.getElementById("input1").value) - parseInt(document.getElementById("input2").value) ;
+            document.getElementById("output").value = sum ;
+        }
+
+        // basic function call 
+        // variables
+        // typecasting
+        // basic operatiors
+        
+
+        //string
+        //number 
+        //float
+        //boolean 
+        //     + addition or concatenation
+        // - subraction
+        // * product
+        // /  division
+        // = assinment operator
+        // == <,>, <= , >=  comparision operator
+    </script>
+</body>
+</html>
