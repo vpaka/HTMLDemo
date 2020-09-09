@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Loop test</title>
+    </head>
+<body>
+    <form>
+        <p><label >Enter your number :</label>
+        <input type="text" id="number" name="uname"></p>
+        <button type="button" class="button" id="button1" name="button1" onclick="runLoop()">Submit</button>
+        <textarea id="txtarea" name="txtarea" rows="5" cols="50"></textarea>
+
+        <textarea id="txtarea2" name="txtarea" rows="5" cols="50"></textarea>
+    </form>
+<script>
+    function runLoop()
+    {
+        var num = parseInt(document.getElementById("number").value) ;
+        var i ;
+        var text = "" ;
+        for (i=0; i<num; i++)
+        {
+            text = "Hello I am line " + i + "\n";
+            document.getElementById("txtarea").value = document.getElementById("txtarea").value + text ;
+        } 
+        /*
+        i=0                     i<num (0<5)         i++ (i=i+1)
+        i=1                     1<5                 i=i+1 (1+1)
+        i=2                      2<5                i=2+1
+        i=3                      3<5                i=3+1
+        i=4                      4<5              i=4+1
+        i=5                      5<5                
+        */
+        var j=0;
+        while(j<num)
+        {
+            var output= "I am line :" + j+ "\n";
+            document.getElementById("txtarea2").value += output; 
+            j++;
+        }
+    }
+</script>
+    
+</body>
+</html>
